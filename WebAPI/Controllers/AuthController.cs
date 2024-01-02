@@ -11,7 +11,6 @@ namespace WebAPI.Controllers
     public class AuthController : ControllerBase
     {
         private readonly UserManager<IdentityUser> userManager;
-
         private readonly ITokenGenerator tokenGenerator;
 
         public AuthController(UserManager<IdentityUser> userManager, ITokenGenerator tokenRepository)
